@@ -1,0 +1,53 @@
+Dictionaries -> (key, value) pairs..
+ {
+    <Key>: <value>
+    'kindle':1,
+    'alexa':2,
+    'iphone':3,
+    1.23: 4,
+    1: 8,
+    (1,2): 9,
+ }
+
+  - Keys ?
+    - All the int , string, float, tuples object these all should hashable.
+    - any variable you can check if it can be a key or not
+        - By using a function called hash().
+    - All variables which are immutable can be used Keys
+    - list or array cannot be used as keys
+    - Keys should be unique in a dictionary
+
+  - Values 
+    - lists , int , dict , float , tuples
+{
+    'list-key': [1, 2, 3]
+    'dict-key': {'kindle': 2}
+}
+
+# Delete 
+# del(mydict['list-key'])
+
+
+# Arrays vs Dictionaries Complexity
+
+# Update operation
+# a = [1, 2, 3] -> a[2] = 4 -> [1 , 2 , 4] -> O(1)
+# mydict -> mydict['kindle'] = 9 -> O(1)
+
+# Delete operation
+# a = [1, 2, 3, 4, 5] -> [2, 3, 4, 5] -> O(n)
+# del(mydict['kindle']) -> O(1)
+
+# Add new Value
+# a = [1, 2, 3]  a.append() -> O(1)
+# mydict['kindle2'] = 4 -> O(1)
+
+# Membership Test 
+# a = [1, 2 , 3, 4] -> O(n) 
+# <key> in mydict (True/False) -> O(1)
+
+
+# why dont we use dictionaries...
+# When you understand problem you will be able deduce that you could form or
+# relation between things to solve the problem is optimized way.
+

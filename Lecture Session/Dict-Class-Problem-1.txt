@@ -1,0 +1,37 @@
+Summary: 
+    Most of the online shoping companies like amazon, flipkart, myntra have an 
+    Inventory team, This team will ensure and track if the they have enough 
+    stock of goods.
+
+Problem:
+    The team recieves different types of items from different vendors. It needs 
+    our help to summarize all the items.
+
+    For example, List of items:
+    - kindle
+    - alexa 
+    - fire phone
+    - iphone 12
+    - kindle 
+
+    it wants to summarize these as
+    kindle - 2
+    alexa - 1
+    fire phone - 1
+    iphone 12 - 1
+
+
+    kindle - 1 + 1 = 2
+    alexa - 1
+    fire phone - 1
+    iphone 12 - 1
+
+# Algoritm..
+
+1. Maintain a List
+2. Pick an Item 
+3. Is the Item is it present in the list 
+    a. if it present increase the count of the item
+    b. if it not present add to your list 
+4. do this for all the items in the list
+

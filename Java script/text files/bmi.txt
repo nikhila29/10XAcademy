@@ -1,0 +1,25 @@
+let fs = require("fs");
+let data = fs.readFileSync(0, 'utf-8');
+let idx = 0;
+data = data.split('\n');
+
+function readLine() {
+  idx++;
+  return data[idx - 1];
+}
+
+// -------- Do NOT edit anything above this line ----
+//BMI = (weight) / (height * height)
+let height=parseInt(readLine())
+let weight=parseInt(readLine())
+let name=readLine()
+let bmi=(weight)/(height*height)
+if(bmi>=25){
+    console.log(`Hey ${name} you are overweight`)
+}
+else if(bmi<18){
+    console.log(`Hey ${name} you are underweight`)
+}
+else{
+    console.log(`Hey ${name} you are having normal weight`)
+}
